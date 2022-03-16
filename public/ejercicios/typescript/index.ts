@@ -87,6 +87,11 @@ let rect: Rectangulo = {
     alto: 3,
     color: Color.Rojo
 }
+/* let rect: Rectangulo = {
+    ancho: 4,
+    alto: 3,
+    color?: Color.Rojo // PODEMOS DEJARLO OPCIONAL '?'
+} */
 
 function area(r: Rectangulo): number {
     return r.alto * r.ancho;
