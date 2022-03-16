@@ -5,12 +5,20 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "live-server --port=8085 --open=public --entry-file=index.html --watch=public/index.html"
+    "start-server": "live-server --port=8085 --open=public --entry-file=index.html --watch=public/index.html",
+    "start": "parcel public/index.html public/sw.js public/ejercicios/index.html public/ejercicios/**/*.html",
+    "resolve": "npm-force-resolutions"
   },
   "keywords": [],
   "author": "Isaac Molina <izaac.everaldo@gmail.com>",
   "license": "ISC",
   "devDependencies": {
-    "live-server": "^1.2.1"
-  }
+    "live-server": "^1.2.1",
+    "npm-force-resolutions": "^0.0.10",
+    "parcel": "^2.3.2"
+  },
+  "resolutions": {
+    "glob-parent": "5.1.2"
+  },
+  "browserslist": "last 1 chrome version"
 }
